@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الزي الحجازي التراثي | كنوز الحجاز</title>
+  <meta name="description" content="اكتشفي تاريخ وجمال الزي الحجازي الأصيل بتصاميمه العريقة وألوانه المميزة.">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* تنسيق بسيط للصفحة فقط (بدون لمس styles.css) */
+    .section-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:2rem;margin-block:1.2rem;}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+    .two-col .box{background:var(--muted);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem}
+    .two-col h3{color:var(--brand);margin:0 0 .8rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+    .gallery figure{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:.9rem;text-align:center}
+    .gallery img{width:100%;height:260px;object-fit:cover;border-radius:12px}
+    .gallery figcaption{margin-top:.6rem;font-size:.95rem}
+    @media (max-width:1000px){.gallery{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:680px){.two-col{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:220px}}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="الرئيسية">
+      <img class="brand-logo" src="Image/Logo.png" alt="كنوز الحجاز" decoding="async">
+      <span class="brand-text">كنوز الحجاز</span>
+    </a>
+
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="فتح/إغلاق القائمة">القائمة</button>
+      <ul class="nav-list" id="primary-menu">
+        <li><a href="regions.html">مناطق الحجاز</a></li>
+        <li><a href="landmarks.html">المعالم</a></li>
+        <li><a href="food.html">الأكلات</a></li>
+        <li><a class="active" href="fashion.html">الأزياء</a></li>
+        <li><a href="customs.html">العادات والتقاليد</a></li>
+      </ul>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">🌙</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <h1>الزي الحجازي التراثي</h1>
+      <p>اكتشفي تاريخ وجمال الزي الحجازي الأصيل بتصاميمه العريقة وألوانه المميزة.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#types">ابدئي الجولة</a>
+        <a class="btn btn-outline" href="#gallery">شاهدي المعرض</a>
+      </div>
+    </div>
+    <figure class="hero-media">
+      <img src="Image/ملامح من الأزياء الحجازي.jpeg" alt="ملامح من الأزياء الحجازية">
+    </figure>
+  </div>
+</section>
+
+<main id="main" class="container">
+
+  <!-- (2) نبذة -->
+  <section class="section-card" aria-labelledby="about-title">
+    <h2 id="about-title" style="color:var(--brand);margin-top:0">نبذة عن الزي الحجازي</h2>
+    <p>الزي الحجازي التراثي هو تجسيد حي لتراث منطقة الحجاز العريق، يعكس ثراؤها المتنوّع ومكانتها القيمية والدينية وواجهتها الحضارية. كان يُرتدى في المناسبات كالأعياد وحفلات الزفاف ويصدر عن هوية اجتماعية وثقافية مهمّة في تاريخ المجتمع الحجازي. النسج المعاصر يحافظ على روح التصميم التقليدي مع لمسات عصرية تناسب المناسبات الرسمية واللقاءات الحديثة.</p>
+  </section>
+
+  <!-- (3) الأنواع: عمودين -->
+  <section id="types" class="section-card" aria-labelledby="types-title">
+    <h2 id="types-title" style="color:var(--brand);margin-top:0">أنواع الزي</h2>
+    <div class="two-col">
+      <div class="box">
+        <h3>الزي النسائي</h3>
+        <h4>الثوب المزخرف</h4>
+        <p>أقمشة فاخرة وتطريزات ذهبية/ملونة على الأكمام والصدر، ويُرتدى في المناسبات الخاصة.</p>
+        <h4>المحرّمة والمدوّرة</h4>
+        <p>المحرّمة غطاء للرأس بتزيينات يدوية، والمدوّرة غطاء إضافي يحيط بالرأس بالكامل.</p>
+        <h4>تزيينات وتطريزات فاخرة</h4>
+        <p>حُلي فضية/ذهبية وأحجار وزخارف دقيقة تمنح الزي لمعة وأناقة.</p>
+      </div>
+
+      <div class="box">
+        <h3>الزي الرجالي</h3>
+        <h4>الثوب المطرّز</h4>
+        <p>ثوب طويل واسع مع نقوش وتطريز على الأكمام أو الصدر، وقد يكون مفتوحًا من الأمام.</p>
+        <h4>الغترة أو العمامة الملوّنة</h4>
+        <p>غطاء رأس تقليدي يميّز الهوية الحجازية، وقد يزدان بخطوط وألوان مختلفة.</p>
+        <h4>البِشت أو العباءة التقليدية</h4>
+        <p>عباءة فاخرة تُرتدى فوق الثوب، غالبًا بلون داكن وحواشٍ مطرزة بخيوط ذهبية/فضية.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- (4) معرض الصور -->
+  <section id="gallery" class="section-card" aria-labelledby="gallery-title">
+    <h2 id="gallery-title" style="color:var(--brand);margin-top:0">معرض الصور التراثي</h2>
+    <div class="gallery">
+      <!-- غيّري المسارات حسب صورك المتوفرة -->
+      <figure>
+        <img src="Image/زي نسائي مطرّز.jpg" alt="زي نسائي مطرّز">
+        <figcaption>زي نسائي مطرّز</figcaption>
+      </figure>
+      <figure>
+        <img src="Image/عروسين بالزي الحجازي.jpg" alt="عروسان بالزي الحجازي">
+        <figcaption>عروسين بالزي الحجازي</figcaption>
+      </figure>
+      <figure>
+        <img src="Image/زي رجالي (طفل).jpg" alt="زي رجالي (طفل)">
+        <figcaption>زي رجالي (طفل)</figcaption>
+      </figure>
+      <figure>
+        <img src="Image/زي نسائي تراثي.jpg" alt="زي نسائي تراثي">
+        <figcaption>زي نسائي تراثي</figcaption>
+      </figure>
+      <figure>
+        <img src="Image/زي نسائي مع قناع تراثي.jpg" alt="زي نسائي مع قناع تراثي">
+        <figcaption>زي نسائي مع قناع تراثي</figcaption>
+      </figure>
+      <figure>
+        <img src="Image/زي رجالي تراثي.jpg" alt="زي رجالي تراثي">
+        <figcaption>زي رجالي تراثي</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> كنوز الحجاز</p>
+    <ul class="footer-links">
+      <li><a href="#types">أنواع الزي</a></li>
+      <li><a href="#gallery">المعرض</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // مبدّل الثيم
+  (function initTheme(){
+    const saved = localStorage.getItem('theme');
+    if(saved){ if(saved==='dark') document.documentElement.classList.add('dark-theme'); }
+    else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+      document.documentElement.classList.add('dark-theme');
+    }
+    const btn = document.getElementById('themeToggle');
+    if(btn){
+      const setIcon = () => btn.textContent =
+        document.documentElement.classList.contains('dark-theme') ? '☀️' : '🌙';
+      setIcon();
+      btn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark-theme');
+        localStorage.setItem('theme',
+          document.documentElement.classList.contains('dark-theme') ? 'dark' : 'light');
+        setIcon();
+      });
+    }
+  })();
+
+  // قائمة الجوال
+  const toggleBtn = document.querySelector('.nav-toggle');
+  const list = document.getElementById('primary-menu');
+  if(toggleBtn && list){
+    toggleBtn.addEventListener('click', () => {
+      const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', String(!expanded));
+      list.classList.toggle('is-open');
+    });
+  }
+</script>
+</body>
+</html>

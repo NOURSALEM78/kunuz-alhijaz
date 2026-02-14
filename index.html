@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كنوز الحجاز | موقع يعرف الزوار على جمال وثقافة منطقة الحجاز</title>
+  <meta name="description" content="كنوز الحجاز: دليل بصري ومعرفي لاكتشاف مدن الحجاز ومعالمه، أكلاته، أزيائه، فنونه، وعاداته." />
+  <meta name="theme-color" content="#8d2430" />
+  <meta property="og:title" content="كنوز الحجاز" />
+  <meta property="og:description" content="رحلة مُلهمة لاكتشاف مكنونات الحجاز." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="Image/Logo.png" />
+  <link rel="icon" href="Image/Logo.png">
+  <script>
+    (function(){
+      var s = localStorage.getItem('theme');
+      if(s){ if(s==='dark') document.documentElement.classList.add('dark-theme'); }
+      else{ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.classList.add('dark-theme'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .brand {display: flex; align-items: center; gap: .6rem; font-weight: 700; color: var(--text);}
+    .brand-logo {width: 45px; height: auto; object-fit: contain;}
+    .brand-text {font-size: 1.1rem;}
+    @media (max-width: 480px){.brand-text{display: none;}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="الرئيسية">
+        <img class="brand-logo" src="Image/Logo.png" alt="كنوز الحجاز" decoding="async">
+        <span class="brand-text">كنوز الحجاز</span>
+      </a>
+
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="فتح/إغلاق القائمة">القائمة</button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a class="active" href="regions.html">مناطق الحجاز</a></li>
+          <li><a href="landmarks.html">المعالم</a></li>
+          <li><a href="food.html">الأكلات</a></li>
+          <li><a href="fashion.html">الأزياء</a></li>
+          <li><a href="customs.html">العادات والتقاليد</a></li>
+        </ul>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+<h1>
+  <img src="Image/Logo.png" alt="لولو الموقع" style="width:400px; height:400;">
+</h1>
+        <p>رحلة مُلهمة لاكتشاف مكنونات الحجاز: مدنه، معالمه، مذاق مطبخه، أناقة أزيائه، أنغامه، وعاداته.</p>
+      <div class="actions">
+          <a class="btn btn-primary" href="#overview">ابدئي الجولة</a>
+          <a class="btn btn-outline" href="regions.html">استكشفي المناطق</a>
+      </div>
+    </div>
+    <div class="hero-media">
+        <img src="Image/Unknown-6.jpg" alt="مشهد من الحجاز" loading="eager">
+    </div>
+  </div>
+</section>
+
+  <main id="main">
+    <section id="overview" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>نظرة عامة وخريطة</h2>
+          <p>لمحة سريعة عن مدن الحجاز الرئيسية وروابط سريعة لكل قسم في الموقع.</p>
+        </header>
+
+        <div class="overview-grid">
+          <figure class="map-card">
+            <img src="Image/Image3.png" alt="خريطة الحجاز" usemap="#hejazMap">
+            <map name="hejazMap">
+              <area shape="poly"
+                coords="90,120,110,80,150,60,200,90,230,140,250,200,240,260,220,320,200,360,180,400,150,440,120,420,100,380,90,300,80,220"
+                href="https://en.wikipedia.org/wiki/Hejaz"
+                target="_blank"
+                alt="منطقة الحجاز">
+            </map>
+            <figcaption>الخريطة تقريبية لأغراض العرض - لمعلومات أكثر اضغط على المنطقة الحمراء</figcaption>
+          </figure>
+
+          <ul class="quick-facts" aria-label="حقائق سريعة">
+            <li><strong>المدن:</strong> مكة، المدينة، جدة، الطائف، ينبع</li>
+            <li><strong>المحاور:</strong> المعالم، الأكلات، الأزياء، الفنون، العادات</li>
+            <li><strong>التجربة:</strong> صور، وصف موجز، ومراجع لكل موضوع</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>الأقسام الرئيسية</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <img src="Image/مدن الحجاز.jpeg" alt="صور من مدن الحجاز" loading="lazy">
+            <div class="card-body">
+              <h3>مناطق الحجاز</h3>
+              <p>تعريف بالموقع ونبذة عن مكة، المدينة، جدة، الطائف، وينبع مع صور وخريطة.</p>
+              <a class="btn btn-ghost" href="regions.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="Image/معالم تاريخية ودينية.jpeg" alt="معالم تاريخية ودينية" loading="lazy">
+            <div class="card-body">
+              <h3>المعالم التاريخية والدينية</h3>
+              <p>الحرم المكي، المسجد النبوي، قصر شبرا، متحف الطيبات، بيت نصيف.</p>
+              <a class="btn btn-ghost" href="landmarks.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="Image/الأكلات الحجازية التقليدية.jpeg" alt="أكلات حجازية" loading="lazy">
+            <div class="card-body">
+              <h3>أكلات أهل الحجاز</h3>
+              <p>منتو، يميش، سليق، دبيازة، معصوب، حلبة — مكونات ووصف سريع.</p>
+              <a class="btn btn-ghost" href="food.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="Image/الأزياء الحجازية التقليدية.jpg" alt="الأزياء الحجازية التقليدية" loading="lazy">
+            <div class="card-body">
+              <h3>الزي الحجازي التقليدي</h3>
+              <p>الرجالي والنسائي + فروقات جدة/مكة/المدينة مع صور توضيحية.</p>
+              <a class="btn btn-ghost" href="fashion.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="Image/عادات وتقاليد.jpeg" alt="العادات والتقاليد الحجازية" loading="lazy">
+            <div class="card-body">
+              <h3>العادات والتقاليد</h3>
+              <p>الزواج، العيد، رمضان، الضيافة، وعبارات حجازية مشهورة.</p>
+              <a class="btn btn-ghost" href="customs.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> كنوز الحجاز </p>
+      <ul class="footer-links">
+        <li><a href="#overview">الخريطة</a></li>
+        <li><a href="regions.html">المناطق</a></li>
+        <li><a href="landmarks.html">المعالم</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggleBtn.addEventListener('click', () => {
+      const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', String(!expanded));
+      list.classList.toggle('is-open');
+    });
+    const themeToggle = document.getElementById('themeToggle');
+    function setIcon() {
+      themeToggle.textContent = document.documentElement.classList.contains('dark-theme') ? '☀️' : '🌙';
+    }
+    setIcon();
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark-theme');
+      const isDark = document.documentElement.classList.contains('dark-theme');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      setIcon();
+    });
+  </script>
+</body>
+</html>

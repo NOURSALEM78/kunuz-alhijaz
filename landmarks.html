@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>المعالم الدينية والتاريخية في الحجاز | كنوز الحجاز</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script>
+    /* تفعيل الثيم المحفوظ قبل تحميل الصفحة (نفس الرئيسية) */
+    (function(){
+      var s = localStorage.getItem('theme');
+      if(s){ if(s==='dark') document.documentElement.classList.add('dark-theme'); }
+      else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+        document.documentElement.classList.add('dark-theme');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #map{ inline-size:100%; block-size:420px; min-block-size:320px; border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+    .brand {display:flex; align-items:center; gap:.6rem; font-weight:700; color:var(--text);}
+    .brand-logo {width:45px; height:auto; object-fit:contain;}
+    .brand-text {font-size:1.1rem;}
+    @media (max-width:480px){ .brand-text{display:none;} }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#content">تخطي إلى المحتوى</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="الرئيسية">
+        <img class="brand-logo" src="Image/Logo.png" alt="كنوز الحجاز" decoding="async">
+        <span class="brand-text">كنوز الحجاز</span>
+      </a>
+
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="فتح/إغلاق القائمة">القائمة</button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a class="active" href="regions.html">مناطق الحجاز</a></li>
+          <li><a href="landmarks.html">المعالم</a></li>
+          <li><a href="food.html">الأكلات</a></li>
+          <li><a href="fashion.html">الأزياء</a></li>
+          <li><a href="customs.html">العادات والتقاليد</a></li>
+        </ul>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <h2>المعالم الدينية والتاريخية في الحجاز</h2>
+      <p>استكشف أبرز الكنوز التاريخية والدينية في قلب الحجاز</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#landmarks">ابدئي الجولة</a>
+        <a class="btn btn-outline" href="#map-section">استكشفي المناطق</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="Image/hejaz_station.jpg" alt="واجهة محطة سكة الحجاز التاريخية" />
+    </div>
+  </div>
+</section>
+
+<main id="content" class="container" role="main">
+  <section id="landmarks" class="section">
+    <div class="section-header">
+      <h2>أبرز المعالم</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card" role="group" aria-labelledby="t-hejaz">
+        <img src="Image/hejaz_station.jpg" alt="محطة سكة حديد الحجاز في المدينة المنورة من الخارج" loading="lazy">
+        <div class="card-body">
+          <h3 id="t-hejaz">محطة سكة حديد الحجاز – المدينة المنورة</h3>
+          <p>محطة سكة حديد الحجاز في المدينة المنورة، وتُعرف أيضًا بـ«الأستسيون»، هي المحطة النهائية للخط القادم من دمشق بطول 1320.5 كيلومتر. افتُتحت في 1 سبتمبر 1908، وبُنيت بتصميم معماري فريد على مقربة من مسجد العنبرية الذي شيده السلطان عبد الحميد الثاني صاحب مشروع السكة. توقّف تشغيلها أثناء الحرب العالمية الأولى ثم نهائيًا عام 1921. واليوم أُعيد تأهيلها لتصبح «متحف سكة الحجاز».</p>
+          <a class="btn btn-ghost" href="https://ar.wikipedia.org/wiki/سكة_حديد_الحجاز" target="_blank" rel="noopener">المصدر</a>
+        </div>
+      </article>
+
+      <article class="card" role="group" aria-labelledby="t-nassif">
+        <img src="Image/nassif_house.jpg" alt="بيت نصيف في جدة التاريخية بواجهته التراثية" loading="lazy">
+        <div class="card-body">
+          <h3 id="t-nassif">بيت نصيف – جدة التاريخية</h3>
+          <p>بُني بيت نصيف في جدة عام 1289هـ على يد الشيخ عمر أفندي نصيف خلال أربع سنوات، ويُعد شاهدًا على النمط المعماري الحجازي القديم. اكتسب أهمية تاريخية وسياسية بوصفه «قصر ضيافة» لزوار الحجاز؛ ونزل فيه عدد من الملوك والأمراء، منهم الملك عبد العزيز بن عبد الرحمن آل سعود الذي اتخذه مقرًا لنحو عشر سنوات ابتداءً من عام 1344هـ.</p>
+          <a class="btn btn-ghost" href="https://ar.wikipedia.org/wiki/بيت_نصيف" target="_blank" rel="noopener">المصدر</a>
+        </div>
+      </article>
+
+      <article class="card" role="group" aria-labelledby="t-quba">
+        <img src="Image/quba_mosque.jpg" alt="مئذنة وقبة من مسجد قباء في المدينة المنورة" loading="lazy">
+        <div class="card-body">
+          <h3 id="t-quba">مسجد قباء – المدينة المنورة</h3>
+          <p>مسجد قباء هو أول مسجد بُني في الإسلام وأول مسجد بُني في المدينة النبوية. شُيِّد حين هاجر النبي ﷺ من مكة إلى المدينة، وظل عبر العصور محل عناية وتوسعات متتابعة؛ جدّده عثمان بن عفان، ثم عمر بن عبد العزيز في عهد الوليد بن عبد الملك، وتتابعت التوسعات حتى التوسعة الكبرى في عهد الدولة السعودية. ويُعد أكبر مساجد المدينة بعد المسجد النبوي.</p>
+          <a class="btn btn-ghost" href="https://ar.wikipedia.org/wiki/مسجد_قباء" target="_blank" rel="noopener">المصدر</a>
+        </div>
+      </article>
+
+      <article class="card" role="group" aria-labelledby="t-hegra">
+        <img src="Image/hegra.jpg" alt="واجهات مقابر منحوتة في صخور مدائن صالح بالعلا" loading="lazy">
+        <div class="card-body">
+          <h3 id="t-hegra">مدائن صالح – العلا</h3>
+          <p>الحِجر (مدائن صالح) موقع تراث عالمي ومعلم سياحي بارز في محافظة العُلا شمال غرب المملكة. تجمع آثار الحِجر حقبًا متعددة؛ النبطية واللحيانية والإسلامية، وتشتهر بمدافنها التاريخية المنحوتة في واجهات الصخور الرملية. وكانت الحِجر أول موقع سعودي يُسجَّل في قائمة اليونسكو عام 1429هـ/2008م.</p>
+          <a class="btn btn-ghost" href="https://ar.wikipedia.org/wiki/مدائن_صالح" target="_blank" rel="noopener">المصدر</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-muted" id="map-section" aria-labelledby="map-title">
+    <div class="section-header">
+      <h2 id="map-title">خريطة تفاعلية للمعالم</h2>
+      <p>اضغطي على العلامات لعرض اسم المعلم.</p>
+    </div>
+    <figure class="map-card">
+      <div id="map" role="application" aria-label="خريطة تفاعلية تعرض مواقع المعالم على منطقة الحجاز"></div>
+      <figcaption>بيانات الخريطة من OpenStreetMap.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section" aria-labelledby="poll-title">
+    <div class="section-header"><h2 id="poll-title">ما هو أكثر معلم ترغبين في زيارته؟</h2></div>
+    <form class="card" style="padding:1rem" onsubmit="event.preventDefault(); alert('شكرًا لمشاركتك!');">
+      <label for="name">اسمك</label>
+      <input type="text" id="name" name="name" placeholder="اكتبي اسمك هنا">
+      <label for="favorite">اختاري المعلم المفضل</label>
+      <select id="favorite" name="favorite">
+        <option value="hejaz_station">محطة سكة حديد الحجاز</option>
+        <option value="nassif_house">بيت نصيف</option>
+        <option value="quba_mosque">مسجد قباء</option>
+        <option value="hegra">مدائن صالح</option>
+      </select>
+      <div style="margin-block: .6rem">
+        <input class="btn btn-primary" type="submit" value="إرسال">
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div>© كنوز الحجاز 2025</div>
+    <ul class="footer-links">
+      <li><a href="#landmarks">المعالم</a></li>
+      <li><a href="#map-section">الخريطة</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" defer></script>
+<script>
+
+  const toggleBtn = document.querySelector('.nav-toggle');
+  const list = document.querySelector('.nav-list');
+  toggleBtn.addEventListener('click', () => {
+    const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+    toggleBtn.setAttribute('aria-expanded', String(!expanded));
+    list.classList.toggle('is-open');
+  });
+
+  const themeToggle = document.getElementById('themeToggle');
+  function setIcon() {
+    themeToggle.textContent = document.documentElement.classList.contains('dark-theme') ? '☀️' : '🌙';
+  }
+  setIcon();
+  themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-theme');
+    const isDark = document.documentElement.classList.contains('dark-theme');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    setIcon();
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    if (typeof L === 'undefined') return;
+    const map = L.map('map', { scrollWheelZoom: false }).setView([24.5, 39.5], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    const points = [
+      { name: "محطة سكة الحجاز", coords: [24.4590, 39.6102], link: "https://ar.wikipedia.org/wiki/سكة_حديد_الحجاز" },
+      { name: "بيت نصيف", coords: [21.4871, 39.1863], link: "https://ar.wikipedia.org/wiki/بيت_نصيف" },
+      { name: "مسجد قباء", coords: [24.4426, 39.6162], link: "https://ar.wikipedia.org/wiki/مسجد_قباء" },
+      { name: "مدائن صالح", coords: [26.8001, 37.9536], link: "https://ar.wikipedia.org/wiki/مدائن_صالح" }
+    ];
+    points.forEach(p => L.marker(p.coords, { title: p.name })
+      .addTo(map)
+      .bindPopup('<a href="'+p.link+'" target="_blank" rel="noopener">'+p.name+'</a>'));
+  });
+</script>
+
+</body>
+</html>

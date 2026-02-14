@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مناطق الحجاز | كنوز الحجاز</title>
+  <meta name="description" content="تعرفي على مدن الحجاز الرئيسية: مكة، المدينة، جدة، الطائف، وينبع — نبذة، خريطة تفاعلية وروابط لأقسام الموقع." />
+  <meta name="theme-color" content="#8d2430" />
+  <script>
+    (function(){
+      var s = localStorage.getItem('theme');
+      if(s){ if(s==='dark') document.documentElement.classList.add('dark-theme'); }
+      else{ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.classList.add('dark-theme'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="index.html">تخطي إلى المحتوى</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="الرئيسية">
+        <img class="brand-logo" src="Image/Logo.png" alt="كنوز الحجاز" decoding="async">
+        <span class="brand-text">كنوز الحجاز</span>
+      </a>
+
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="فتح/إغلاق القائمة">القائمة</button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a class="active" href="regions.html">مناطق الحجاز</a></li>
+          <li><a href="landmarks.html">المعالم</a></li>
+          <li><a href="food.html">الأكلات</a></li>
+          <li><a href="fashion.html">الأزياء</a></li>
+          <li><a href="customs.html">العادات والتقاليد</a></li>
+        </ul>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>مناطق الحجاز</h1>
+        <p>إقليم الحجاز يمتد على طول الساحل الغربي للمملكة العربية السعودية، ويضم مدناً تاريخية وثقافية ذات أهمية دينية واقتصادية كبرى. يعتبر الحجاز قلب العالم الإسلامي، حيث يقع فيه المسجد الحرام والمسجد النبوي، إلى جانب مدن مزدهرة بالحياة والتجارة والفنون.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#overview">ابدئي الجولة</a>
+          <a class="btn btn-outline" href="#map">شاهدي الخريطة</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+
+      </figure>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="overview" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>الخريطة التوضيحية</h2>
+          <p>اضغط على أي مدينة في الخريطة للتعرف على تاريخها ومعالمها المميزة</p>
+        </header>
+
+        <figure class="map-card">
+          <img src="الحجاز.png" alt="خريطة تقريبية لمنطقة الحجاز" usemap="#hejazMap">
+          <map name="hejazMap">
+            <area shape="poly"
+              coords="90,120,110,80,150,60,200,90,230,140,250,200,240,260,220,320,200,360,180,400,150,440,120,420,100,380,90,300,80,220"
+              href="#cities" alt="منطقة الحجاز">
+          </map>
+          <figcaption>للإحالة الجغرافية الدقيقة استخدمي خرائط خارجية. هذه الخريطة لأغراض التصميم فقط.</figcaption>
+        </figure>
+      </div>
+    </section>
+<section id="cities" class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2>المدن الرئيسية</h2>
+      <p>نبذة مختصرة لكل مدينة.</p>
+    </header>
+
+    <div class="cards">
+      <article class="card" id="makkah" aria-labelledby="t-makkah">
+        <img src="makkah.jpg" alt="مكة المكرمة" class="card-img">
+        <div class="card-body">
+          <h3 id="t-makkah">مكة المكرمة</h3>
+          <p>مكة المكرمة هي أقدس مدينة في الإسلام، يقصدها ملايين المسلمين سنوياً لأداء فريضة الحج والعمرة. تحتضن المسجد الحرام والكعبة المشرفة، قبلة المسلمين في صلواتهم. تتميز مكة بتاريخ طويل يعود لآلاف السنين، وكانت مركزاً تجارياً مهماً على طريق القوافل. إضافةً إلى قيمتها الدينية، تشهد مكة نمواً عمرانياً سريعاً مع مشاريع ضخمة لخدمة الحجاج والمعتمرين.</p>
+          <a class="btn btn-ghost" href="#top">أعلى الصفحة</a>
+        </div>
+      </article>
+
+      <article class="card" id="madinah" aria-labelledby="t-madinah">
+        <img src="madinah.jpg" alt="المدينة المنورة" class="card-img">
+        <div class="card-body">
+          <h3 id="t-madinah">المدينة المنورة</h3>
+          <p>المدينة المنورة، ثاني أقدس مدينة في الإسلام، هاجر إليها الرسول ﷺ وأسس فيها الدولة الإسلامية. تحتضن المسجد النبوي الذي يضم الروضة الشريفة وقبر النبي محمد ﷺ. تشتهر المدينة بطيبة أهلها وأجوائها الروحانية، كما أنها مركز مهم للعلم والثقافة الإسلامية عبر التاريخ، وتتميز بواحاتها وبساتين النخيل التي شكلت جزءاً من هويتها الزراعية.</p>
+          <a class="btn btn-ghost" href="#top">أعلى الصفحة</a>
+        </div>
+      </article>
+
+      <article class="card" id="jeddah" aria-labelledby="t-jeddah">
+        <img src="jeddah.jpg" alt="جدة" class="card-img">
+        <div class="card-body">
+          <h3 id="t-jeddah">جدة</h3>
+          <p>جدة هي بوابة الحرمين الشريفين، مدينة ساحلية نابضة بالحياة تقع على ضفاف البحر الأحمر. تعتبر مركزاً تجارياً رئيسياً في المملكة، وتشتهر بكورنيشها الممتد وأسواقها التقليدية مثل سوق البلد. تتميز جدة بمزيج من العمارة التاريخية الحديثة، وهي ملتقى للثقافات والفنون، وتعد وجهة سياحية محببة بفضل شواطئها ومرافقها الترفيهية.</p>
+          <a class="btn btn-ghost" href="#top">أعلى الصفحة</a>
+        </div>
+      </article>
+
+      <article class="card" id="taif" aria-labelledby="t-taif">
+        <img src="taif.jpg" alt="الطائف" class="card-img">
+        <div class="card-body">
+          <h3 id="t-taif">الطائف</h3>
+          <p>الطائف مدينة جبلية خلابة تقع على منحدرات جبال السروات، وتشتهر بمناخها المعتدل ومزارع الورد الطائفي الذي يصنع منه أرقى أنواع العطور. كانت الطائف عبر التاريخ مصيفاً للأمراء والملوك بفضل أجوائها الباردة صيفاً. تضم الطائف العديد من المعالم التاريخية والأسواق الشعبية، إلى جانب المنتزهات الطبيعية التي تجذب الزوار من مختلف أنحاء المملكة.</p>
+          <a class="btn btn-ghost" href="#top">أعلى الصفحة</a>
+        </div>
+      </article>
+
+      <article class="card" id="yanbu" aria-labelledby="t-yanbu">
+        <img src="yanbu.jpg" alt="ينبع" class="card-img">
+        <div class="card-body">
+          <h3 id="t-yanbu">ينبع</h3>
+          <p>ينبع مدينة ساحلية هادئة على البحر الأحمر، معروفة بجمال شواطئها وصفاء مياهها، مما يجعلها وجهة مثالية لمحبي الغوص والأنشطة البحرية. تنقسم ينبع إلى ثلاثة أقسام: ينبع النخل ذات التاريخ الزراعي العريق، ينبع البحر كميناء بحري، وينبع الصناعية كمركز للصناعات البتروكيماوية. هذا التنوع جعلها</p>
+          <a class="btn btn-ghost" href="#top">أعلى الصفحة</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>تابعي الاستكشاف</h2>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <div class="card-body">
+              <h3>المعالم</h3>
+              <p>أبرز المواقع الدينية والتاريخية.</p>
+              <a class="btn btn-ghost" href="landmarks.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>الأكلات</h3>
+              <p>أطباق من المطبخ الحجازي.</p>
+              <a class="btn btn-ghost" href="food.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>الأزياء</h3>
+              <p>الزي التقليدي ومكوناته.</p>
+              <a class="btn btn-ghost" href="fashion.html">ادخلي الصفحة</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> كنوز الحجاز</p>
+      <ul class="footer-links">
+        <li><a href="#overview">الخريطة</a></li>
+        <li><a href="regions.html">المناطق</a></li>
+        <li><a href="landmarks.html">المعالم</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggleBtn.addEventListener('click', () => {
+      const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', String(!expanded));
+      list.classList.toggle('is-open');
+    });
+    const themeToggle = document.getElementById('themeToggle');
+    function setIcon() {
+      themeToggle.textContent = document.documentElement.classList.contains('dark-theme') ? '☀️' : '🌙';
+    }
+    setIcon();
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark-theme');
+      const isDark = document.documentElement.classList.contains('dark-theme');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      setIcon();
+    });
+  </script>
+</body>
+</html>
